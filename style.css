@@ -1,0 +1,86 @@
+/* General Layout */
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: LightGray; 
+    margin: 0; 
+    padding: 0; 
+}
+
+/* Header and Navigation [Source 3, 9] */
+header { 
+    background-color: Blue; 
+    color: White; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+nav ul { 
+    display: flex; 
+    justify-content: center; 
+    list-style: none; 
+    padding: 0; 
+    gap: 20px; 
+}
+
+nav a { 
+    color: White; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+/* UI Container [Source 7] */
+.converter-container { 
+    background-color: White; 
+    max-width: 600px; 
+    margin: 30px auto; 
+    padding: 25px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px Gray; 
+}
+
+.ingredient-row { 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 10px; 
+}
+
+/* Button Styling [Source 8] */
+button { 
+    background-color: Blue; 
+    color: White; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+button:hover { 
+    background-color: Navy; 
+}
+
+/* Hidden Utility [Source 9] */
+.hidden { display: none; }
+
+/* Recipe Card Design [Source 176, 177] */
+#recipeCard { 
+    background-color: White; 
+    border: 2px solid Black; 
+    max-width: 500px; 
+    margin: 20px auto; 
+    padding: 20px; 
+}
+
+/* Footer [Source 3] */
+footer { 
+    background-color: Black; 
+    color: White; 
+    text-align: center; 
+    padding: 15px; 
+    width: 100%; 
+}
+
+/* Responsive Design: Mobile [Source 9] */
+@media (max-width: 600px) {
+    .ingredient-row { flex-direction: column; }
+    .converter-container { width: 90%; margin: 10px auto; }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Converter - Project 76</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Recipe Converter</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="converter-container">
+            <h2>Recipe Customizer</h2>
+            <form id="recipeForm">
+                <div class="input-field">
+                    <label>Desired Serving Size (People):</label>
+                    <input type="number" id="servingSize" value="1" min="1" required>
+                </div>
+
+                <div id="ingredientList">
+                    <h3>Ingredients</h3>
+                    <div class="ingredient-row">
+                        <input type="text" placeholder="Name (e.g., Sugar)" class="ing-name" required>
+                        <input type="number" placeholder="Qty" class="ing-qty" required>
+                        <select class="ing-unit">
+                            <option value="tsp">Teaspoon (tsp)</option>
+                            <option value="ml">Milliliters (ml)</option>
+                            <option value="cup">Cup</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" id="addRowBtn">Add Ingredient</button>
+                    <button type="submit" id="convertBtn">Convert Recipe</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="recipeCard" class="hidden">
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Student Name| C/raxmaan C/rashiid Gaabow</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
